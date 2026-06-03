@@ -18,7 +18,7 @@ jobs:
         
       - name: Generate Content and Commit Message
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.KEY }}
           REPO_NAME: ${{ github.repository }}
         run: |
           # 1. Grab project context safely
@@ -45,7 +45,7 @@ jobs:
           
           # 3. Call the Gemini API
           RESPONSE=$(curl -s "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent" \
-            -H "x-goog-api-key: $Key" \
+            -H "x-goog-api-key: $GEMINI_API_KEY" \
             -H "Content-Type: application/json" \
             -X POST \
             -d "$JSON_PAYLOAD")
