@@ -28,3 +28,6 @@ Automated check-in.
 ### Log Entry: 2026-06-11
 Automated check-in.
 
+### Log Entry: 2026-06-12
+Today, we focused on enhancing the intelligent data extraction feature by refining the prompt templates used for LLM-based invoice parsing. By structuring the expected JSON output format more rigidly, we achieved a significant improvement in the extraction accuracy of nested line items and tax breakdowns from multi-page vendor PDFs. Our immediate next step is to implement a robust fallback mechanism using a lightweight rule-based OCR parser to handle poor-quality scans.
+
