@@ -34,3 +34,6 @@ Today, we focused on enhancing the intelligent data extraction feature by refini
 ### Log Entry: 2026-06-13
 Today we focused on optimizing the intelligent data extraction pipeline, specifically addressing an issue where multi-page PDF invoices would exceed the token limits of our LLM parsing engine. By introducing a preprocessing step that segments the PDF and extracts key textual blocks using a lightweight OCR model before feeding structured text to the LLM, we have successfully reduced processing API costs by 30% while improving extraction accuracy for complex, multi-item invoices. Our next milestone will be integrating this optimized parser into the main invoice upload dashboard and setting up comprehensive unit tests.
 
+### Log Entry: 2026-06-14
+Today's focus was on enhancing the OCR-based Intelligent Data Extraction pipeline by integrating layout-aware parsing, which improves the extraction accuracy of multi-column line items from uploaded PDF receipts before passing them to the LLM. We also initiated a prototype for caching parsed results of frequent vendors to minimize API latency and reduce operational costs.
+
