@@ -37,3 +37,6 @@ Today we focused on optimizing the intelligent data extraction pipeline, specifi
 ### Log Entry: 2026-06-14
 Today's focus was on enhancing the OCR-based Intelligent Data Extraction pipeline by integrating layout-aware parsing, which improves the extraction accuracy of multi-column line items from uploaded PDF receipts before passing them to the LLM. We also initiated a prototype for caching parsed results of frequent vendors to minimize API latency and reduce operational costs.
 
+### Log Entry: 2026-06-15
+To improve the reliability of the Intelligent Data Extraction engine, we refined the LLM parsing schema to enforce structured JSON outputs when processing low-resolution PDF receipts. Additionally, we implemented a fallback OCR preprocessing step using image contrast enhancement, which significantly reduces extraction errors for faded or wrinkled paper receipts before they are passed to the smart categorization module.
+
