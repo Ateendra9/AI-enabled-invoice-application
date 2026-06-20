@@ -52,3 +52,6 @@ Automated check-in.
 ### Log Entry: 2026-06-19
 Automated check-in.
 
+### Log Entry: 2026-06-20
+Today we focused on refining the intelligent data extraction pipeline to address schema inconsistency issues with the LLM-based invoice parser. By implementing Pydantic validation on the LLM's output and configuring structured decoding, we have significantly minimized parsing failures for non-standard receipt layouts. Moving forward, we plan to integrate this structured parsing with our local OCR preprocessing step to improve the overall processing speed and handle low-quality image scans more gracefully.
+
