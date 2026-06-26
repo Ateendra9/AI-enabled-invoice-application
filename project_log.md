@@ -70,3 +70,6 @@ To enhance the accuracy of our payment prediction engine, we have initiated the 
 ### Log Entry: 2026-06-25
 Automated check-in.
 
+### Log Entry: 2026-06-26
+We have successfully refined the LLM-based OCR processing pipeline to better handle complex, multi-page PDF invoices. By optimizing the token usage and structuring the prompt schema, the parser now extracts nested line items and tax breakdowns with significantly higher accuracy, reducing manual corrections for our users. Moving forward, we plan to integrate this improved parser directly with our analytics dashboard to ensure real-time revenue visualization as soon as an invoice is uploaded.
+
