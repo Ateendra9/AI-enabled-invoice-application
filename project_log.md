@@ -82,3 +82,6 @@ Automated check-in.
 ### Log Entry: 2026-06-29
 Automated check-in.
 
+### Log Entry: 2026-06-30
+Today, we focused on refining the intelligent data extraction pipeline by integrating a lightweight LLM-based post-processor to clean up raw OCR text from uploaded invoice PDFs. This enhances the accuracy of line-item and total extraction, significantly reducing parser errors for non-standard receipt layouts. Moving forward, we plan to implement a confidence-scoring metric to flag uncertain extractions for manual review on the dashboard.
+
