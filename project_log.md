@@ -85,3 +85,6 @@ Automated check-in.
 ### Log Entry: 2026-06-30
 Today, we focused on refining the intelligent data extraction pipeline by integrating a lightweight LLM-based post-processor to clean up raw OCR text from uploaded invoice PDFs. This enhances the accuracy of line-item and total extraction, significantly reducing parser errors for non-standard receipt layouts. Moving forward, we plan to implement a confidence-scoring metric to flag uncertain extractions for manual review on the dashboard.
 
+### Log Entry: 2026-07-01
+Today's focus was on enhancing the OCR-based intelligent data extraction pipeline. We integrated a fallback mechanism that leverages a lightweight layout-aware LLM when standard Tesseract OCR fails to accurately parse complex, multi-column PDF invoice tables, significantly improving the data extraction accuracy rate for nested line items.
+
