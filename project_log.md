@@ -88,3 +88,6 @@ Today, we focused on refining the intelligent data extraction pipeline by integr
 ### Log Entry: 2026-07-01
 Today's focus was on enhancing the OCR-based intelligent data extraction pipeline. We integrated a fallback mechanism that leverages a lightweight layout-aware LLM when standard Tesseract OCR fails to accurately parse complex, multi-column PDF invoice tables, significantly improving the data extraction accuracy rate for nested line items.
 
+### Log Entry: 2026-07-02
+Today, we focused on enhancing the intelligent data extraction pipeline by refining the LLM prompting strategy and output schema for parsing unstructured invoice PDFs. This adjustment improves extraction accuracy for multi-page line items and complex tax breakdowns. Moving forward, we plan to implement a local OCR fallback mechanism to handle low-resolution scanned receipts more gracefully.
+
