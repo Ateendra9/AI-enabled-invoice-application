@@ -115,3 +115,6 @@ Automated check-in.
 ### Log Entry: 2026-07-10
 Today's focus was on enhancing the robust data extraction pipeline for uploaded PDFs and image receipts. We integrated a confidence-scoring mechanism for the LLM-based parser, ensuring that any extracted line items or vendor details falling below a 0.85 confidence threshold are routed to a secondary validation queue or processed via an alternative OCR template fallback. This significantly improves parsing accuracy and reduces manual correction overhead for our users. Next, we will focus on updating the frontend dashboard to display these extraction confidence levels to users in real-time.
 
+### Log Entry: 2026-07-11
+Today's efforts focused on refining the intelligent data extraction pipeline, specifically targeting multi-page PDF invoices where line items occasionally get truncated during LLM processing. To resolve this, we are planning to introduce a sliding-window text chunking strategy before sending the payload to the LLM. This will ensure that large tables spanning multiple pages are fully captured and parsed accurately without exceeding token limits, thereby stabilizing our automated extraction success rate.
+
