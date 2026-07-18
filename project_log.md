@@ -130,3 +130,6 @@ Today, we focused on refining the intelligent data extraction pipeline by integr
 ### Log Entry: 2026-07-16
 Automated check-in.
 
+### Log Entry: 2026-07-18
+Today's focus was on improving the robustness of the intelligent data extraction pipeline. When processing highly unstructured or low-resolution PDF receipts, the LLM occasionally fails to extract structured line items reliably. To address this, we developed a rule-based fallback parsing mechanism using direct PDF layout analysis and regular expressions. This hybrid approach ensures that if the primary LLM-based extractor fails to meet a specific confidence threshold, the system can still reconstruct the invoice totals and vendor details with high accuracy, minimizing manual review rates for users.
+
