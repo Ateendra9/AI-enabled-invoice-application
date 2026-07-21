@@ -139,3 +139,6 @@ Today's focus was on refining the prompt engineering and parser logic for the LL
 ### Log Entry: 2026-07-20
 Automated check-in.
 
+### Log Entry: 2026-07-21
+Today we investigated optimizations for the LLM-based invoice parser to address latency issues when handling multi-page PDF documents. By implementing a chunking strategy that pre-filters non-tabular metadata using lightweight OCR before feeding complex transaction tables into the model, we can drastically reduce token consumption and improve extraction speed. Moving forward, we plan to implement this hybrid parsing pipeline and benchmark its accuracy against our existing naive OCR approach.
+
