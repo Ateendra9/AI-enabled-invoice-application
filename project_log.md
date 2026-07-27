@@ -151,3 +151,6 @@ Automated check-in.
 ### Log Entry: 2026-07-25
 Automated check-in.
 
+### Log Entry: 2026-07-27
+To enhance the intelligent data extraction feature, we are prioritizing the integration of a multi-page PDF parsing queue. The current OCR pipeline occasionally struggles with skewed tables across page breaks. By introducing a preprocessing step that normalizes image rotation and chunking long documents before sending them to the LLM API, we can significantly reduce token consumption and improve the overall extraction accuracy for large, multi-item vendor receipts.
+
