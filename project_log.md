@@ -178,3 +178,6 @@ Automated check-in.
 ### Log Entry: 2026-08-06
 Automated check-in.
 
+### Log Entry: 2026-08-08
+Today, we focused on refining the intelligent data extraction pipeline by integrating a lightweight LLM parser alongside our OCR engine to handle edge cases in unstructured vendor receipts. This update improves parsing accuracy for tabular line items and reduces token overhead by preprocessing receipt text before sending it to the model. Next steps include setting up a local fallback parser for when live API limits are reached and beginning integration with the multi-currency conversion module.
+
