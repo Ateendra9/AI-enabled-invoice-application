@@ -181,3 +181,6 @@ Automated check-in.
 ### Log Entry: 2026-08-08
 Today, we focused on refining the intelligent data extraction pipeline by integrating a lightweight LLM parser alongside our OCR engine to handle edge cases in unstructured vendor receipts. This update improves parsing accuracy for tabular line items and reduces token overhead by preprocessing receipt text before sending it to the model. Next steps include setting up a local fallback parser for when live API limits are reached and beginning integration with the multi-currency conversion module.
 
+### Log Entry: 2026-08-09
+Today's development focused on enhancing the robustness of the intelligent data extraction pipeline. We implemented a validation fallback mechanism for the LLM-based parser that automatically triggers a secondary OCR heuristic whenever the extraction confidence score for line items falls below our target threshold. This refinement ensures higher accuracy for complex tables in scanned invoices, reducing manual correction overhead and improving the downstream data quality for our smart categorization engine.
+
