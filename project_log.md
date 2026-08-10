@@ -184,3 +184,6 @@ Today, we focused on refining the intelligent data extraction pipeline by integr
 ### Log Entry: 2026-08-09
 Today's development focused on enhancing the robustness of the intelligent data extraction pipeline. We implemented a validation fallback mechanism for the LLM-based parser that automatically triggers a secondary OCR heuristic whenever the extraction confidence score for line items falls below our target threshold. This refinement ensures higher accuracy for complex tables in scanned invoices, reducing manual correction overhead and improving the downstream data quality for our smart categorization engine.
 
+### Log Entry: 2026-08-10
+Today's focus was on enhancing the robustness of our LLM-based document parser. We implemented a multi-stage preprocessing pipeline utilizing basic image thresholding and contrast adjustment prior to sending scanned receipts to the OCR engine. This significantly reduces extraction errors on low-resolution or poorly lit PDF/image uploads, ensuring that key invoice metadata like total amounts and vendor details are captured accurately before the categorization algorithm processes them.
+
