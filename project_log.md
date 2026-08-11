@@ -187,3 +187,6 @@ Today's development focused on enhancing the robustness of the intelligent data 
 ### Log Entry: 2026-08-10
 Today's focus was on enhancing the robustness of our LLM-based document parser. We implemented a multi-stage preprocessing pipeline utilizing basic image thresholding and contrast adjustment prior to sending scanned receipts to the OCR engine. This significantly reduces extraction errors on low-resolution or poorly lit PDF/image uploads, ensuring that key invoice metadata like total amounts and vendor details are captured accurately before the categorization algorithm processes them.
 
+### Log Entry: 2026-08-11
+Today's development focused on improving the robustness of the intelligent data extraction pipeline. While the LLM successfully parses vendor details and line items from uploaded invoice PDFs, we occasionally encounter schema mismatches that cause database insertion failures. To address this, I initiated the integration of a structured data validation layer using Pydantic. This will enforce a strict schema on the LLM's JSON output before it hits our database, ensuring that fields like currency codes, tax rates, and line-item totals are correctly formatted and typed, with automated fallback logic in case of validation errors.
+
