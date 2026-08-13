@@ -193,3 +193,6 @@ Today's development focused on improving the robustness of the intelligent data 
 ### Log Entry: 2026-08-12
 With the core OCR and LLM-based data extraction pipeline now running smoothly, our next logical step is to build out the payment prediction feature. We plan to integrate a lightweight Scikit-Learn classification model to analyze historical payment timelines, invoicing frequency, and client profiles, allowing us to flag potential late-paying clients directly on the analytics dashboard.
 
+### Log Entry: 2026-08-13
+Today's focus was on refining the intelligent data extraction pipeline by improving the schema constraints on our LLM-based parser. We've observed intermittent parsing issues with complex multi-page PDF receipts where line items weren't mapping properly to our database schema. By transitioning the LLM prompt to utilize structured JSON outputs and adding a secondary validation layer with Pydantic, we can ensure the extracted vendor details, line items, and totals are completely compliant before database insertion, significantly reducing manual correction rates.
+
