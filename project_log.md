@@ -208,3 +208,6 @@ Today's focus was on refining the payment prediction engine by integrating a lig
 ### Log Entry: 2026-08-17
 Automated check-in.
 
+### Log Entry: 2026-08-18
+Today, I focused on enhancing the intelligent data extraction pipeline by implementing a fallback mechanism when OCR outputs are low-confidence. By leveraging an LLM-based post-processing step, the system can now reconstruct fragmented vendor details and missing line items from lower-quality PDF uploads, significantly increasing extraction accuracy. Moving forward, the next step is to integrate a validation schema using Pydantic to ensure the parsed invoice structures match our database models before saving.
+
