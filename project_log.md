@@ -214,3 +214,6 @@ Today, I focused on enhancing the intelligent data extraction pipeline by implem
 ### Log Entry: 2026-08-19
 Automated check-in.
 
+### Log Entry: 2026-08-20
+Today's development focused on refining the intelligent data extraction pipeline by introducing a hybrid OCR and LLM-based parser. To mitigate external API latency, we implemented a lightweight, local Tesseract-based fallback system that extracts basic invoice text when the LLM service experiences timeouts. This ensures high availability of the core ingestion feature. Additionally, we laid down the foundational schema for our payment prediction model, mapping out features like historical client delay ratios and invoice amount thresholds to train the upcoming machine learning classifier.
+
