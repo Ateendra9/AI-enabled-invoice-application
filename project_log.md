@@ -217,3 +217,6 @@ Automated check-in.
 ### Log Entry: 2026-08-20
 Today's development focused on refining the intelligent data extraction pipeline by introducing a hybrid OCR and LLM-based parser. To mitigate external API latency, we implemented a lightweight, local Tesseract-based fallback system that extracts basic invoice text when the LLM service experiences timeouts. This ensures high availability of the core ingestion feature. Additionally, we laid down the foundational schema for our payment prediction model, mapping out features like historical client delay ratios and invoice amount thresholds to train the upcoming machine learning classifier.
 
+### Log Entry: 2026-08-21
+Today's focus was on refining the machine learning model used for client payment delay prediction. By integrating additional features such as historical average days to pay and invoice volume per client, we managed to improve the prediction accuracy of high-risk flags. We also initiated a refactor of the background workers responsible for training this model asynchronously to ensure the main dashboard remains responsive during model updates.
+
