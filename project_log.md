@@ -220,3 +220,6 @@ Today's development focused on refining the intelligent data extraction pipeline
 ### Log Entry: 2026-08-21
 Today's focus was on refining the machine learning model used for client payment delay prediction. By integrating additional features such as historical average days to pay and invoice volume per client, we managed to improve the prediction accuracy of high-risk flags. We also initiated a refactor of the background workers responsible for training this model asynchronously to ensure the main dashboard remains responsive during model updates.
 
+### Log Entry: 2026-08-22
+Today we improved the intelligent data extraction pipeline by implementing a robust OCR fallback mechanism. When standard PDF text parsing fails, the system now automatically routes scanned receipts and low-quality images to a local lightweight vision model for layout-aware optical character recognition. This significantly reduces manual correction rates for complex, multi-column vendor bills and ensures line items are accurately mapped to our database schema prior to categorization.
+
