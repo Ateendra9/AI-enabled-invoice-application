@@ -223,3 +223,6 @@ Today's focus was on refining the machine learning model used for client payment
 ### Log Entry: 2026-08-22
 Today we improved the intelligent data extraction pipeline by implementing a robust OCR fallback mechanism. When standard PDF text parsing fails, the system now automatically routes scanned receipts and low-quality images to a local lightweight vision model for layout-aware optical character recognition. This significantly reduces manual correction rates for complex, multi-column vendor bills and ensures line items are accurately mapped to our database schema prior to categorization.
 
+### Log Entry: 2026-08-23
+Today, we focused on enhancing the intelligent data extraction pipeline. While the LLM-based parser works exceptionally well with structured PDFs, we observed a drop in accuracy when processing low-resolution scanned images. To address this, we are proposing the integration of a pre-processing pipeline that performs image enhancement (such as binarization and rotation correction) before executing the OCR engine. This will ensure higher confidence scores during line-item extraction and minimize manual corrections on the analytics dashboard.
+
