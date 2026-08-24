@@ -226,3 +226,6 @@ Today we improved the intelligent data extraction pipeline by implementing a rob
 ### Log Entry: 2026-08-23
 Today, we focused on enhancing the intelligent data extraction pipeline. While the LLM-based parser works exceptionally well with structured PDFs, we observed a drop in accuracy when processing low-resolution scanned images. To address this, we are proposing the integration of a pre-processing pipeline that performs image enhancement (such as binarization and rotation correction) before executing the OCR engine. This will ensure higher confidence scores during line-item extraction and minimize manual corrections on the analytics dashboard.
 
+### Log Entry: 2026-08-24
+Today's focus was on enhancing the OCR data extraction pipeline to better handle complex, multi-page invoice layouts with nested tables. We integrated a hybrid parsing strategy that combines traditional layout analysis with LLM-guided schema extraction to dramatically reduce errors in line-item parsing. Initial benchmarks show a 15% increase in extraction accuracy for multi-item vendor PDFs. Moving forward, we plan to refine prompt templates for the LLM step and begin caching extraction results to minimize token usage and latency.
+
