@@ -244,3 +244,6 @@ Today's focus was on enhancing the payment prediction engine to better flag invo
 ### Log Entry: 2026-08-29
 Today we focused on improving the robustness of our intelligent data extraction module. By integrating structured schema validation with our LLM-based parser, we successfully mitigated issues related to missing or malformed line items in multi-page invoices. This improvement ensures that vendor details, tax breakdowns, and individual line items are parsed with high accuracy before being saved to the database. Moving forward, we plan to implement a confidence score threshold to flag low-confidence parses for manual review.
 
+### Log Entry: 2026-08-30
+We have successfully initiated the integration of the OCR and LLM-based parsing engine for the Intelligent Data Extraction feature. Our current focus is on optimizing the prompt engineering for the parser to improve the extraction accuracy of complex nested tables inside PDF invoices. Over the next sprint, we plan to implement a confidence scoring mechanism for the extracted line items, which will trigger manual review workflows when the AI confidence falls below a specified threshold.
+
