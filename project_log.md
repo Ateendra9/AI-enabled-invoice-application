@@ -247,3 +247,6 @@ Today we focused on improving the robustness of our intelligent data extraction 
 ### Log Entry: 2026-08-30
 We have successfully initiated the integration of the OCR and LLM-based parsing engine for the Intelligent Data Extraction feature. Our current focus is on optimizing the prompt engineering for the parser to improve the extraction accuracy of complex nested tables inside PDF invoices. Over the next sprint, we plan to implement a confidence scoring mechanism for the extracted line items, which will trigger manual review workflows when the AI confidence falls below a specified threshold.
 
+### Log Entry: 2026-08-31
+Today we focused on enhancing the intelligent data extraction pipeline by refining our LLM-based parsing prompts and integrating fallback OCR support for scanned PDF receipts. This update ensures more resilient extraction of vendor details, line items, and tax breakdowns even from low-resolution document uploads. Moving forward, we will begin benchmarking the processing latency and token usage to optimize our API expenditures during bulk invoice parsing.
+
