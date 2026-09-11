@@ -277,3 +277,6 @@ Today I focused on optimizing the LLM-based invoice extraction pipeline to handl
 ### Log Entry: 2026-09-10
 Today's progress focused on laying the groundwork for the payment prediction engine by designing a historical client payment dataset structure and implementing a classification model. This model evaluates client payment reliability based on invoice amount, due date, historical delay patterns, and industry sectors. Moving forward, we need to integrate this ML pipeline with the backend API so the dashboard can highlight high-risk invoices dynamically and suggest preventative actions.
 
+### Log Entry: 2026-09-11
+To enhance the reliability of our Intelligent Data Extraction feature, we are planning to integrate a confidence-scoring mechanism for the LLM-based OCR parser. By establishing a threshold, the system can automatically flag low-confidence extractions for manual user review, ensuring absolute accuracy in line-item details and totals before generating final invoices. This safeguard will significantly reduce manual reconciliation errors for our freelance and small-business users.
+
