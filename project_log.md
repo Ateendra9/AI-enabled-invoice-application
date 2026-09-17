@@ -295,3 +295,6 @@ Automated check-in.
 ### Log Entry: 2026-09-16
 Today we focused on enhancing the intelligent data extraction pipeline by designing a robust validation layer for OCR confidence scores. When parsing complex, multi-page PDFs, low-confidence text segments will now trigger an LLM-based reconciliation step rather than failing silently, significantly reducing manual corrections for nested table structures and multi-currency line items.
 
+### Log Entry: 2026-09-17
+Today's progress focused on refining the intelligent data extraction pipeline. We implemented a robust fallback mechanism for the LLM-based invoice parser; in cases where the LLM response fails validation or encounters token limits on dense multi-page invoices, the system now gracefully falls back to a template-based OCR extraction method. This ensures high-accuracy line item parsing and prevents application crashes during bulk document uploads, ultimately enhancing the reliability of the core automated billing workflow.
+
