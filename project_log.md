@@ -310,3 +310,6 @@ We have successfully refined the LLM-based parsing pipeline to better handle mul
 ### Log Entry: 2026-09-21
 Automated check-in.
 
+### Log Entry: 2026-09-22
+Today we focused on enhancing the intelligent data extraction pipeline by integrating a preprocessing layer for low-resolution receipt images before sending them to the OCR and LLM engines. This optimization dramatically improves extraction accuracy for line items and total amounts. Moving forward, we plan to connect the live currency exchange rate API to enable real-time multi-currency support on the dashboard.
+
