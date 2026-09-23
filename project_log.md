@@ -313,3 +313,6 @@ Automated check-in.
 ### Log Entry: 2026-09-22
 Today we focused on enhancing the intelligent data extraction pipeline by integrating a preprocessing layer for low-resolution receipt images before sending them to the OCR and LLM engines. This optimization dramatically improves extraction accuracy for line items and total amounts. Moving forward, we plan to connect the live currency exchange rate API to enable real-time multi-currency support on the dashboard.
 
+### Log Entry: 2026-09-23
+Today we focused on enhancing the robustness of our intelligent data extraction pipeline. To handle low-quality PDF uploads and blurry receipt images, we integrated a confidence-score thresholding mechanism for the OCR pre-processing layer. If the OCR engine's confidence falls below 85%, the system now automatically routes the document through a fallback image-enhancement pipeline before passing the text to the LLM. This significantly reduces parsing errors for vendor names and line items, laying a solid foundation for more reliable automated invoice generation.
+
