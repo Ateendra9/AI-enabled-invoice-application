@@ -319,3 +319,6 @@ Today we focused on enhancing the robustness of our intelligent data extraction 
 ### Log Entry: 2026-09-24
 Automated check-in.
 
+### Log Entry: 2026-09-25
+Today we focused on improving the Intelligent Data Extraction pipeline by integrating a fallback OCR layer for low-resolution PDFs, ensuring that when LLM-based processing encounters scanning artifacts, the system can still extract baseline line items and vendor details. This significantly reduces extraction failures and prepares the backend for more robust integration with the live analytics dashboard.
+
