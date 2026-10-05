@@ -349,3 +349,6 @@ Automated check-in.
 ### Log Entry: 2026-10-04
 Today's focus was on enhancing the robust processing of the LLM-based invoice parser to handle multi-page PDFs with fragmented line items. We introduced a pre-processing chunking strategy before feeding the extracted OCR text into the LLM context, preventing context overflow and significantly increasing extraction accuracy for complex vendor layouts. Next steps involve integrating this chunked parser pipeline with the automated categorization model to ensure seamless schema validation before invoice database insertion.
 
+### Log Entry: 2026-10-05
+Today's focus was on enhancing the invoice parsing engine by integrating a robust fallback mechanism for OCR extraction; when the LLM-based parser encounters low-confidence scores on scanned vendor PDFs, the system will now automatically route the image through an optimized Tesseract layout parser to pre-structure the text before LLM analysis. This hybrid approach significantly improves key-value extraction accuracy for multi-page invoices with complex tables and reduces token usage during prompt construction.
+
