@@ -352,3 +352,6 @@ Today's focus was on enhancing the robust processing of the LLM-based invoice pa
 ### Log Entry: 2026-10-05
 Today's focus was on enhancing the invoice parsing engine by integrating a robust fallback mechanism for OCR extraction; when the LLM-based parser encounters low-confidence scores on scanned vendor PDFs, the system will now automatically route the image through an optimized Tesseract layout parser to pre-structure the text before LLM analysis. This hybrid approach significantly improves key-value extraction accuracy for multi-page invoices with complex tables and reduces token usage during prompt construction.
 
+### Log Entry: 2026-10-06
+To advance our payment prediction capabilities, today's focus is on integrating a predictive scoring model that evaluates historical client payment patterns. By ingesting past settlement times, average payment delays, and invoice amounts, the model will calculate a late-payment risk probability for every newly generated invoice, which will ultimately populate the high-risk flags on our analytics dashboard.
+
