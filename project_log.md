@@ -358,3 +358,6 @@ To advance our payment prediction capabilities, today's focus is on integrating 
 ### Log Entry: 2026-10-07
 Automated check-in.
 
+### Log Entry: 2026-10-08
+Today's development focused on optimizing the multi-currency support feature by introducing a caching layer for the live exchange rate API. Currently, fetching real-time rates on every invoice rendering request causes unnecessary API latency and risks hitting rate limits during peak usage. By caching exchange rates with a 1-hour expiration time, we can significantly boost dashboard load times and improve the overall reliability of the automated invoice generation pipeline. Next, we will begin writing integration tests to ensure seamless fallback behavior when the live exchange rate API is unreachable.
+
