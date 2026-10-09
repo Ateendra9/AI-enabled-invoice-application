@@ -361,3 +361,6 @@ Automated check-in.
 ### Log Entry: 2026-10-08
 Today's development focused on optimizing the multi-currency support feature by introducing a caching layer for the live exchange rate API. Currently, fetching real-time rates on every invoice rendering request causes unnecessary API latency and risks hitting rate limits during peak usage. By caching exchange rates with a 1-hour expiration time, we can significantly boost dashboard load times and improve the overall reliability of the automated invoice generation pipeline. Next, we will begin writing integration tests to ensure seamless fallback behavior when the live exchange rate API is unreachable.
 
+### Log Entry: 2026-10-09
+Today's focus was on enhancing the robustness of the intelligent data extraction pipeline. While the LLM-based OCR parser performs well on standard templates, we noticed occasional discrepancies in dense, multi-page invoice tables. To address this, we plan to implement a confidence score thresholding mechanism in the extraction service. When the LLM confidence falls below 85%, the system will flag the invoice for manual verification on the dashboard, ensuring high data accuracy while still automating the vast majority of standard invoicing pipelines.
+
