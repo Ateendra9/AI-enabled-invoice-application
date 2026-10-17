@@ -385,3 +385,6 @@ Automated check-in.
 ### Log Entry: 2026-10-16
 Automated check-in.
 
+### Log Entry: 2026-10-17
+Today we focused on refining the OCR and LLM-based data extraction pipeline to better handle multi-page PDF invoices with inconsistent line-item formatting. By implementing structured JSON schema validation on the LLM output and adding a pre-processing step for low-resolution receipts, we significantly reduced extraction errors for vendor details and item totals. Moving forward, we plan to integrate this pipeline with the smart categorization module to classify extracted expenses automatically upon upload.
+
