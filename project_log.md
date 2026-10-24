@@ -406,3 +406,6 @@ Today I evaluated the payment prediction model's performance on client payment d
 ### Log Entry: 2026-10-23
 Automated check-in.
 
+### Log Entry: 2026-10-24
+To enhance our invoice tracking capabilities, we are integrating a machine learning pipeline for predicting payment delays based on historical client transaction patterns. By analyzing attributes such as past payment delays, invoice total, and payment terms, the model will flag high-risk invoices directly on the dashboard, allowing users to proactively send automated payment reminders before due dates.
+
