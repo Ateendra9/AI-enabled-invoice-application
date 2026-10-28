@@ -418,3 +418,6 @@ Automated check-in.
 ### Log Entry: 2026-10-27
 Automated check-in.
 
+### Log Entry: 2026-10-28
+To improve the accuracy of our Intelligent Data Extraction feature, we need to enhance the OCR pipeline's ability to handle multi-page PDF invoices with complex table layouts across page breaks. I propose integrating a hybrid table extraction model combining LayoutLM with traditional rule-based parsing to ensure line items and tax calculations remain consistent regardless of invoice length. This will significantly reduce manual corrections for bulk uploads from enterprise vendors.
+
