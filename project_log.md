@@ -424,3 +424,6 @@ To improve the accuracy of our Intelligent Data Extraction feature, we need to e
 ### Log Entry: 2026-10-29
 Automated check-in.
 
+### Log Entry: 2026-10-30
+To enhance the accuracy of our Intelligent Data Extraction module, we are experimenting with a hybrid pipeline that combines localized Tesseract OCR fallback with our primary LLM parser for multi-page PDF invoices. Preliminary tests indicate a 15% reduction in extraction errors for low-resolution vendor receipts, though processing latency slightly increased. Our next priority will be optimizing the bounding-box cropping pre-processing step to minimize token usage and accelerate overall response times before rolling this update out to the staging environment.
+
