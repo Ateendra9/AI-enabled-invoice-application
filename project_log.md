@@ -433,3 +433,6 @@ Automated check-in.
 ### Log Entry: 2026-11-01
 To improve the reliability of our automated invoice parsing pipeline, we are implementing an image preprocessing step alongside a multi-engine fallback mechanism for receipt OCR. Currently, low-resolution scans occasionally lead to incomplete data extraction during LLM processing. Adding contrast adjustment and noise reduction prior to text extraction will significantly increase accuracy for poor-quality receipt uploads.
 
+### Log Entry: 2026-11-02
+To improve the accuracy of our intelligent data extraction module, we evaluated the OCR and LLM parsing performance on multi-page PDF invoices containing unconventional layout formats and nested line items. Moving forward, we plan to implement a pre-processing step that normalizes multi-page document layouts before feeding structured prompts into the LLM, ensuring higher precision in extracting line-item totals and vendor metadata across multi-currency receipts.
+
