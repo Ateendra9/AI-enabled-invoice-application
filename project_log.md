@@ -439,3 +439,6 @@ To improve the accuracy of our intelligent data extraction module, we evaluated 
 ### Log Entry: 2026-11-03
 Automated check-in.
 
+### Log Entry: 2026-11-05
+Today, we focused on refining the OCR and LLM extraction pipeline to improve line-item parsing accuracy from low-resolution PDF receipts. We integrated structured output schema validation to ensure JSON outputs from the vision model match our internal invoice data model seamlessly. Moving forward, we plan to connect this extracted data directly to the analytics dashboard pipeline to enable real-time updates upon receipt upload.
+
