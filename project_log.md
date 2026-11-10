@@ -454,3 +454,6 @@ Automated check-in.
 ### Log Entry: 2026-11-09
 To improve the accuracy of line item extraction from low-quality receipt scans, we are implementing a fallback mechanism that passes raw OCR bounding boxes to the LLM when initial confidence scores drop below threshold values. This hybrid parsing pipeline will significantly reduce manual corrections for corrupted or faded documents during invoice generation, ensuring higher precision in automated expense categorizations.
 
+### Log Entry: 2026-11-10
+To enhance the reliability of our automated invoice parsing pipeline, we are implementing a confidence scoring mechanism for the combined OCR and LLM extraction step. When parsing receipts with low image quality or non-standard formatting, the system will calculate certainty scores for critical fields like line-item totals and vendor tax IDs. If any score falls below a pre-set threshold, the invoice will be flagged for human review in the dashboard, ensuring high data accuracy while maintaining an efficient automated workflow.
+
