@@ -463,3 +463,6 @@ Today's focus was on enhancing the payment prediction engine by integrating a ne
 ### Log Entry: 2026-11-12
 Automated check-in.
 
+### Log Entry: 2026-11-13
+With the core analytics dashboard and payment prediction features now stable, the next logical step is to refine the OCR pipeline for low-resolution receipt images. Implementing an image pre-processing step using adaptive thresholding and contrast enhancement prior to feeding images into the LLM parser should significantly reduce extraction errors and improve vendor detail accuracy.
+
