@@ -466,3 +466,6 @@ Automated check-in.
 ### Log Entry: 2026-11-13
 With the core analytics dashboard and payment prediction features now stable, the next logical step is to refine the OCR pipeline for low-resolution receipt images. Implementing an image pre-processing step using adaptive thresholding and contrast enhancement prior to feeding images into the LLM parser should significantly reduce extraction errors and improve vendor detail accuracy.
 
+### Log Entry: 2026-11-14
+To optimize the multi-currency conversion pipeline, we are implementing a Redis caching layer for the live exchange rate API requests. This will significantly reduce latency during invoice generation, prevent hitting third-party rate limits during peak usage, and ensure fallback rate availability during API outages.
+
