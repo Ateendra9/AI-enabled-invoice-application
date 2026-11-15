@@ -469,3 +469,6 @@ With the core analytics dashboard and payment prediction features now stable, th
 ### Log Entry: 2026-11-14
 To optimize the multi-currency conversion pipeline, we are implementing a Redis caching layer for the live exchange rate API requests. This will significantly reduce latency during invoice generation, prevent hitting third-party rate limits during peak usage, and ensure fallback rate availability during API outages.
 
+### Log Entry: 2026-11-15
+To improve the accuracy of our payment delay risk assessment feature, we spent today refining the feature extraction pipeline for historical client payment behaviors. By incorporating factors such as client payment frequency, average invoice amount, and seasonal delay trends into the risk scoring algorithm, the model demonstrates significantly lower false positive rates during backtesting. Our next step will be to surface these updated risk metrics directly onto the analytics dashboard via a dedicated alert widget.
+
