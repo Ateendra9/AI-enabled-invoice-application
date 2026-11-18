@@ -478,3 +478,6 @@ With the core OCR and LLM data extraction pipelines stabilized, our next priorit
 ### Log Entry: 2026-11-17
 Automated check-in.
 
+### Log Entry: 2026-11-18
+With the OCR and LLM-based data extraction pipeline showing stable extraction rates for standard PDF receipts, our immediate focus shifts toward improving line-item parsing accuracy for complex multi-page invoices. We plan to implement a dynamic schema validation step post-LLM extraction to catch formatting discrepancies and automatically request re-summarization or manual verification for low-confidence fields before finalizing the invoice draft.
+
