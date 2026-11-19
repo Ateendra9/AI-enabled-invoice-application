@@ -481,3 +481,6 @@ Automated check-in.
 ### Log Entry: 2026-11-18
 With the OCR and LLM-based data extraction pipeline showing stable extraction rates for standard PDF receipts, our immediate focus shifts toward improving line-item parsing accuracy for complex multi-page invoices. We plan to implement a dynamic schema validation step post-LLM extraction to catch formatting discrepancies and automatically request re-summarization or manual verification for low-confidence fields before finalizing the invoice draft.
 
+### Log Entry: 2026-11-19
+Today, we focused on refining the late payment prediction module by integrating historical client payment metrics into our risk scoring pipeline. We engineered features such as client payment velocity, average delay days, and seasonal cash flow trends to improve prediction accuracy. Initial evaluation shows a noticeable drop in false positives when identifying high-risk invoices. Moving forward, we plan to connect these risk scores directly to automated email reminder triggers within the dashboard.
+
