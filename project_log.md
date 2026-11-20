@@ -484,3 +484,6 @@ With the OCR and LLM-based data extraction pipeline showing stable extraction ra
 ### Log Entry: 2026-11-19
 Today, we focused on refining the late payment prediction module by integrating historical client payment metrics into our risk scoring pipeline. We engineered features such as client payment velocity, average delay days, and seasonal cash flow trends to improve prediction accuracy. Initial evaluation shows a noticeable drop in false positives when identifying high-risk invoices. Moving forward, we plan to connect these risk scores directly to automated email reminder triggers within the dashboard.
 
+### Log Entry: 2026-11-20
+Today, we focused on improving the Intelligent Data Extraction pipeline by integrating a fallback mechanism between Tesseract OCR and LLM-based parsing to increase extraction accuracy on low-quality receipt images. By standardizing the structured JSON output format across both parsing engines, line items and vendor totals now load much faster and with fewer validation errors into the draft invoice state. Moving forward, we plan to connect these extracted data points directly to the analytics dashboard to provide real-time updates on pending revenues.
+
