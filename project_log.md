@@ -496,3 +496,6 @@ Today, we focused on refining the multi-currency conversion pipeline by integrat
 ### Log Entry: 2026-11-23
 Automated check-in.
 
+### Log Entry: 2026-11-24
+Today, we focused on enhancing the invoice data extraction pipeline by integrating a multi-modal layout analysis model alongside our existing OCR setup. While simple single-page receipts were parsing reliably, multi-page PDFs with non-standard tables occasionally missed sub-totals and tax line items. To address this, we implemented a pre-processing step that segments spatial layout regions before sending raw text to the LLM for structured extraction. Early testing shows a significant reduction in parsing errors for complex invoices, and our next focus will be establishing robust fallback handling for missing field schemas.
+
