@@ -499,3 +499,6 @@ Automated check-in.
 ### Log Entry: 2026-11-24
 Today, we focused on enhancing the invoice data extraction pipeline by integrating a multi-modal layout analysis model alongside our existing OCR setup. While simple single-page receipts were parsing reliably, multi-page PDFs with non-standard tables occasionally missed sub-totals and tax line items. To address this, we implemented a pre-processing step that segments spatial layout regions before sending raw text to the LLM for structured extraction. Early testing shows a significant reduction in parsing errors for complex invoices, and our next focus will be establishing robust fallback handling for missing field schemas.
 
+### Log Entry: 2026-11-25
+Today we focused on enhancing the reliability of the multi-currency conversion module within the invoicing engine. To prevent workflow interruptions when third-party exchange rate APIs experience downtime, we implemented a cached exchange rate fallback system alongside automated retry logic. Moving forward, we plan to integrate this with the analytics dashboard so users can view historical revenue trends normalized against daily currency fluctuations.
+
